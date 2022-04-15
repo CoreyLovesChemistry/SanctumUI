@@ -3,6 +3,5 @@ local Games = {
 }
 
 local SelectedGame = Games[game.PlaceId]
-print(SelectedGame)
 
 getgenv().GameType = (SelectedGame or "General")
