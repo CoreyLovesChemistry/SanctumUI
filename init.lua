@@ -2,4 +2,7 @@ local Games = {
   ["155615604"] = "PrisonLife";
 }
 
-getgenv().GameType = (Games[tostring(game.PlaceId)] or "General")
+local SelectedGame = Games[game.PlaceId]
+print(SelectedGame)
+
+getgenv().GameType = (SelectedGame or "General")
